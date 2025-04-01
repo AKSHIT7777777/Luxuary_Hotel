@@ -1,0 +1,79 @@
+:root {
+  /* Primary Colors */
+  --primary-gold: #C4A747;
+  --primary-dark: #1C1C1C;
+  --primary-light: #FFFFFF;
+  
+  /* Secondary Colors */
+  --secondary-gold: #DBC374;
+  --secondary-dark: #2C2C2C;
+  --secondary-gray: #F5F5F5;
+  
+  /* Accent Colors */
+  --accent-bronze: #CD7F32;
+  --accent-cream: #F9F6E8;
+  
+  /* Overlay Colors */
+  --overlay-dark: rgba(28, 28, 28, 0.8);
+  --overlay-gold: rgba(196, 167, 71, 0.1);
+  
+  /* Text Colors */
+  --text-dark: #1C1C1C;
+  --text-light: #FFFFFF;
+  --text-gold: #C4A747;
+}
+
+/* Apply base styles */
+body {
+  background-color: var(--primary-light);
+  color: var(--text-dark);
+}
+
+.navbar {
+  background-color: var(--primary-dark);
+}
+
+.nav-links a {
+  color: var(--text-light);
+}
+
+.premium-btn {
+  background-color: var(--primary-gold);
+  color: var(--text-light);
+  transition: background-color 0.3s ease;
+}
+
+.premium-btn:hover {
+  background-color: var(--secondary-gold);
+}
+
+.hero-content {
+  background-color: var(--overlay-dark);
+  color: var(--text-light);
+}
+
+.room-card {
+  background-color: var(--secondary-gray);
+}
+
+.service-overlay {
+  background-color: var(--overlay-dark);
+  color: var(--text-light);
+}
+
+.booking-section {
+  background-color: var(--accent-cream);
+}
+
+.premium-contact {
+  background-color: var(--primary-dark);
+  color: var(--text-light);
+}
+
+.premium-icon {
+  color: var(--primary-gold);
+}
+
+.premium-text {
+  color: var(--text-gold);
+}
