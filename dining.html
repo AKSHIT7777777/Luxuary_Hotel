@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fine Dining - Grand Luxury Hotel</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="css/premium-buttons.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <a href="index.html">
+                <span class="logo-text">Grand Luxury</span>
+                <span class="logo-subtext">HOTEL</span>
+            </a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html#rooms">Rooms & Suites</a></li>
+            <li><a href="dining.html">Dining</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="#contact-section">Contact</a></li>
+        </ul>
+        <a href="index.html#booking-form"><button class="book-btn premium-btn">Book Now</button></a>
+    </nav>
+
+
+    <main>
+        <section class="dining-hero" style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('images/restaurant.jpg');">
+            <h1>Fine Dining Experience</h1>
+            <p>Culinary Excellence at its Finest</p>
+        </section>
+
+        <section class="restaurants-section">
+            <h2>Our Restaurants</h2>
+            <div class="venue-grid">
+                <div class="venue-card">
+                    <img src="images/restaurant.jpg" alt="The Grand Restaurant">
+                    <div class="venue-info">
+                        <h3>The Grand Restaurant</h3>
+                        <p>Fine International Cuisine</p>
+                        <ul>
+                            <li><i class="fas fa-clock"></i> Dinner: 6:00 PM - 11:00 PM</li>
+                            <li><i class="fas fa-user-tie"></i> Smart Elegant Attire</li>
+                            <li><i class="fas fa-utensils"></i> À la carte menu</li>
+                        </ul>
+                        <a href="#reservation-form"><button class="premium-btn">Reserve Table</button></a>
+                    </div>
+                </div>
+
+                <div class="venue-card">
+                    <img src="images/terrace.jpg" alt="Terrace Lounge">
+                    <div class="venue-info">
+                        <h3>Terrace Lounge</h3>
+                        <p>Light Meals & Cocktails</p>
+                        <ul>
+                            <li><i class="fas fa-clock"></i> 12:00 PM - 12:00 AM</li>
+                            <li><i class="fas fa-user"></i> Smart Casual</li>
+                            <li><i class="fas fa-glass-martini-alt"></i> Signature cocktails</li>
+                        </ul>
+                        <a href="#reservation-form"><button class="premium-btn">Reserve Table</button></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="reservation-form" class="booking-section">
+           
+            
+            <form class="booking-form">
+                <div class="reservation-header">
+                    <h2 class="reservation-title">Make a Reservation</h2>
+                    <p class="reservation-subtitle">Experience culinary excellence at our restaurants</p>
+                </div>
+                <div class="form-container">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="restaurant">Select Restaurant</label>
+                            <select id="restaurant" name="restaurant" required>
+                                <option value="">Choose a restaurant</option>
+                                <option value="grand">The Grand Restaurant</option>
+                                <option value="terrace">Terrace Lounge</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="guests">Number of Guests</label>
+                            <input type="number" id="guests" name="guests" min="1" max="10" required>
+                        </div>
+                    </div>
+        
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="date">Date</label>
+                            <input type="date" id="date" name="date" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="time">Time</label>
+                            <input type="time" id="time" name="time" required>
+                        </div>
+                    </div>
+        
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+                    </div>
+        
+                    <div class="form-row">
+                        <div class="form-group full-width">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                    </div>
+        
+                    <div class="form-row">
+                        <div class="form-group full-width">
+                            <label for="special-requests">Special Requests</label>
+                            <textarea id="special-requests" name="special-requests" rows="3" placeholder="Any dietary restrictions or special occasions?"></textarea>
+                        </div>
+                    </div>
+        
+                    <div class="form-row">
+                        <button type="submit" class="premium-btn submit-btn">Confirm Reservation</button>
+                    </div>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <footer id="contact-section">
+        <div class="footer-content">
+            <div class="contact-info">
+                <h3>Contact Us</h3>
+                <div class="contact-grid">
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Address</h4>
+                            <p>123 Luxury Avenue<br>Beverly Hills, CA 90210</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Phone</h4>
+                            <p>Front Desk: +1 (555) 123-4567</p>
+                            <p>Reservations: +1 (555) 987-6543</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p>info@grandluxury.com</p>
+                            <p>reservations@grandluxury.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h4>Hours</h4>
+                            <p>Check-in: 3:00 PM</p>
+                            <p>Check-out: 11:00 AM</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="social-links">
+                <h4>Follow Us</h4>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
